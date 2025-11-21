@@ -11,7 +11,35 @@ import { logout } from '../../Firebase'
 const Navbar = () => {
 
   return (
-    <p>Navbar</p>
+    <div className="main-div">
+      <div className="logo-div">
+        <img src={logo} alt="Logo" className='logo'/>
+        
+        <div className="list">
+          <ul>
+            <li>Home</li>
+            <li>TV Shows</li>
+            <li>Movies</li>
+            <li>New & Popular</li>
+            <li>My List</li>
+            <li>Browse By Language</li>
+          </ul>
+        </div>
+        </div>
+        <div className="icons">
+          <img src={searchIcon} alt="" />
+          <p>Children</p>
+          <img src={bellIcon} alt="" />
+          <div className="profile">
+            <img src={profilePic} alt="" />
+             
+             <div className="dropdown">
+            <img src={dropdownIcon} alt="" />
+             <p>sign out of Netflix</p>
+          </div>
+          </div>
+          </div>
+    </div>
   )
 }
 
